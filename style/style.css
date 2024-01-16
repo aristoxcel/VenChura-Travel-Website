@@ -110,7 +110,8 @@ main{
 
 /* Destination section start here */
 .destination,
-.choosing_us_content{
+.choosing_us_content,
+.newsletter{
     margin:3rem 1rem;
 }
 
@@ -227,6 +228,121 @@ main{
 }
 
 
+/* Newsletter section start here */
+
+.subscribe>*{
+    padding-bottom: .8rem;
+}
+
+.subscribe{
+    border: 1px solid var(--clr-logo);
+    width: 100%;
+    border-radius: 16px;
+    padding: 26px;
+}
+
+.subscribe .subscribe_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe .subscribe_form>*{
+    margin-bottom: 16px ;
+}
+
+.subscribe .subscribe_form input{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--bg-f);
+    padding-left:1rem ;
+    border: 0;
+}
+
+.subscribe_form>input::placeholder {
+    color: var(--clr-placeholder);
+  }
+
+  .subscribe_form>button{
+    width: 100%;
+  }
+
+.single_line{
+    border-top: 1px solid  rgba(19, 19, 24, 0.10);
+    border-left: 0;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+.newsletter_image{
+    position: relative;
+    width: 95%;
+    height: 100%;
+    display: flex;
+}
+
+.newsletter_image>img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+
+}
+
+.newsletter_image>.newsletter_offer{
+    position: absolute;
+    bottom: 50px;
+    right: 1%;
+    transform: rotate(-26deg);
+    background-color: var(--clr-logo);
+    font-size: 1.2rem;
+    color: var(--clr-0);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.newsletter_offer>span{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.newsletter{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap:10px;
+}
+
+
+/* footer start here */
+
+footer{
+    margin-top: 5rem;
+}
+.footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    text-align: center;
+    padding: 5rem;
+}
+
+.footer_pera{
+    margin: 0 auto;
+}
+
+.star_line{
+    width: 80%;
+    border: 1px solid rgba(19, 19, 24, 0.10);
+    margin: 2rem auto;
+}
+
+
+.social_div>*{
+    padding-right: 1rem;
+}
+
+
+
+
 
 
 
@@ -242,6 +358,18 @@ main{
     }
     #last-item{
         margin-left:0%;
+    }
+  
+    .subscribe{
+        padding: 16px 16px 0px 16px;
+    }
+    
+    .subscribe .subscribe_form>*{
+        margin-bottom: 10px ;
+    }
+    
+    .subscribe .subscribe_form input{
+        height: 40px;
     }
 }
 
@@ -297,4 +425,12 @@ main{
 #last-item{
     margin-left:0%;
 }
+
+.newsletter{
+    grid-template-columns: 1fr;
+}
+.newsletter_image{
+    width: 100%
+}
+
 }
