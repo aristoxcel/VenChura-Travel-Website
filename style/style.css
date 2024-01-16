@@ -104,6 +104,7 @@ font-weight: 800;
 .main_nav{
     width: 100%;
 }
+
 .main_nav>ul{
     display: flex;
     justify-content: space-between;
